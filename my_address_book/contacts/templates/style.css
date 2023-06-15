@@ -1,0 +1,12 @@
+.add-person {
+    background-color: #f00; /* Replace with your desired color for the "Add Person" button */
+    color: #fff; /* Replace with your desired text color */
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
+  .person-form input[type="search"] {
+    background-color: lightblue; /* Replace with your desired color for the "Search" field */
+  }
+  

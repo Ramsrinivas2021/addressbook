@@ -1,0 +1,13 @@
+<h1>Search Results</h1>
+<a href="{% url 'add_person' %}">Add Person</a>
+<form action="{% url 'search' %}" method="GET">
+    <input type="text" name="q" value="{{ query }}">
+    <input type="submit" value="Search">
+</form>
+<ul>
+    {% for result in results %}
+        <li>{{ result.person.name }} - {{ result.address }}</li>
+    {% empty %}
+        <li>No results found.</li>
+    {% endfor %}
+</ul>
